@@ -2,6 +2,8 @@
 <h1>oof</h1>
 it appears a giant velociraptor has eaten the page you have entered.
 <iframe src="https://youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0"></iframe>
+<p>But you've entered a special page with a reward!</p>
+<p>To find the reward, just wait a second or two after the page has loaded and click on this text!</p>
 <code>404 page not found</code>
 <style type="text/css" media="all">
 	body{
@@ -15,8 +17,8 @@ it appears a giant velociraptor has eaten the page you have entered.
 		left:0;
 		width:100vw;
 		height:100vh;
-		opacity:0.2;
-		z-index: -100
+		opacity:0;
+		z-index: 200
 	}
 	code{
 		display: block;
@@ -26,6 +28,9 @@ it appears a giant velociraptor has eaten the page you have entered.
 	pre{
 		font-family: sans-serif;
 		text-shadow: 1px 1px 1px white;
+	}
+	#rr{
+		display: none;
 	}
 </style>
 <pre id="rr">
@@ -41,8 +46,12 @@ NEVER GONNA RUN AROUND AND DESERT YOU
 </pre>
 <script type="text/javascript" charset="utf-8">
 	var c = 0
+	var dd
 	setInterval(()=>{
 		document.getElementById("rr").style.color ="hsl(" + c + ", 50%, 50%)"
 		c+=10
 	}, 20)
+	setTimeout(()=>{
+		document.getElementById("rr").style.display = "block"
+	}, 8000)
 </script>
