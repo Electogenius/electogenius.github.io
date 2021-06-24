@@ -4,33 +4,81 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>random</title>
+	<title>Random</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.11.2/js/onsenui.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.css" type="text/css" media="all" />
 	<style>
 		* {
-			font-family: ui-rounded, monospace
+			font-family: system-ui, sans-serif;
 		}
-		it{
-			display: block;
+		
+		.d>*>div.page__content {
+			color: white;
+			background-color: black !important;
+			z-index: 2 !important
+		}
+		.d>ons-page>div.page__background, .d>ons-page>div.page__content{
+			top: 0 !important;
+		}
+		.d>ons-page>ons-toolbar>div.center {
+			background-color: #151515;
+			color: white;
+			/*backdrop-filter: blur(8px);*/
+			opacity: 1;
+			z-index: 20 !important
+		}
+		.d>ons-page>ons-toolbar{
+			opacity: 0.1;
+			position: absolute;
+		}
+		ons-list-item{
+			background-color: black;
+			color: white !important;
+		}
+		ons-list-item > div {
+			border-bottom: 1px solid #151515 !important;
 		}
 	</style>
 </head>
 
 <body>
-	<header>
-		Hello
-	</header>
-	<appbody>
-		<list>
-			<it>switch to android mode</it>
-			<it>switch to iOS UI</it>
-			<it></it>
-			<it>e</it>
-			<it>m</it>
-		</list>
-	</appbody>
+	<ons-navigator class="d">
+		<ons-page>
+			<ons-toolbar>
+				<div class="center">Random</div>
+			</ons-toolbar>
+			<ons-list>
+				<ons-list-item>switch to android mode</ons-list-item>
+				<ons-list-item>switch to iOS UI</ons-list-item>
+				<ons-list-item>hmm</ons-list-item>
+				<ons-list-item>e</ons-list-item>
+				<ons-list-item>m</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+				<ons-list-item>loremipsum</ons-list-item>
+			</ons-list>
+		</ons-page>
+	</ons-navigator>
 	<script type="text/javascript" charset="utf-8">
-		
 	</script>
 </body>
+
 </html>
