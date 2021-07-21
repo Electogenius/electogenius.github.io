@@ -1,6 +1,6 @@
 <!DOCTYPE rickroll>
 <script>
-	//setTimeout(()=>window.location='https://youtu.be/dQw4w9WgXcQ',500)
+	setTimeout(()=>window.location='https://youtu.be/dQw4w9WgXcQ',5000)
 	fetch("https://api.allorigins.win/get?url=https://request-counter.vercel.app/api?e="+Math.random()).catch(r=>{throw(r)}).then(r=>{r.json().then(r=>{console.log(r.contents);e.innerHTML="You are rickroll number "+r.contents;done()})})
 	function done(){
 		setTimeout(()=>window.location='https://youtu.be/dQw4w9WgXcQ',500)
