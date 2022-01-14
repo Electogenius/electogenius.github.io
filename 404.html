@@ -51,5 +51,5 @@ NEVER GONNA RUN AROUND AND DESERT YOU
 		document.getElementById("rr").style.color ="hsl(" + c + ", 50%, 50%)"
 		c+=10
 	}, 20)
-	window.onblur=()=>{if(document.activeElement.tagName=='iframe')document.getElementById("rr").style.display = "block"}
+	window.onblur=()=>{if(document.activeElement.tagName.toLowerCase()=='iframe')document.getElementById("rr").style.display = "block"}
 </script>
